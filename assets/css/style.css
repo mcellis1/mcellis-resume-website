@@ -3,6 +3,7 @@
     --margin-left: 250px;
     --green: rgb(130, 167, 63);
     --brown: rgb(29, 13, 6);
+    --yellow: rgb(204, 201, 24)
 }
 
 * {
@@ -12,17 +13,18 @@
 header {
     text-align: center;
     font-size: 40px;
-    background-color: rgb(231, 228, 24);
+    background-color: var(--yellow);
     padding: 16px;
+    color: var(--brown);
 }
 
 body {
     background-color: rgb(83, 56, 23);
+    position: relative;
 }
 
 .container1 {
     background-color: var(--green);
-    padding: 20px;
     position: absolute;
     top: 72px;
     bottom: 0;
@@ -31,12 +33,22 @@ body {
     margin: 0px;
 }
 
+.container1 h2 {
+    margin: 12px 0 12px 0;
+    color: var(--green);
+    text-align: center;
+    font-size: 28px;
+    padding: 12px;
+    background-color: var(--brown);
+}
+
 .container1 li {
     font-size: 16px;
     padding: 8px;
     margin: 8px;
     background-color: rgb(221, 241, 188);
     border-radius: 10px;
+    text-align: center;
 }
 
 .container1 p {
@@ -60,6 +72,17 @@ body {
 
 .container2 {
     margin-left: var(--margin-left);
+}
+
+.container2 p {
+    font-size: 22px;
+    text-align: left;
+    margin: 16px;
+    padding: 16px;
+    max-width: 1250px;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    line-height: 28px;
 }
 
 .block {
@@ -124,8 +147,19 @@ body {
 
 .email-form {
     margin-left: 350px;
+    color: antiquewhite;
+}
+
+#tree {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
 }
 
 footer {
     margin-left: 350px;
+    color: antiquewhite;
 }
