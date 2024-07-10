@@ -1,33 +1,61 @@
-* {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
 :root {
     --margin: 16px;
     --margin-left: 250px;
+    --green: rgb(130, 167, 63);
+    --brown: rgb(29, 13, 6);
+}
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 header {
     text-align: center;
     font-size: 40px;
-    background-color: rgb(197, 166, 81);
+    background-color: rgb(231, 228, 24);
     padding: 16px;
 }
 
 body {
-    background-color: rgb(129, 115, 98);
+    background-color: rgb(83, 56, 23);
 }
 
 .container1 {
-    background-color: rgb(206, 228, 156);
+    background-color: var(--green);
     padding: 20px;
     position: absolute;
     top: 72px;
     bottom: 0;
     left: 0;
     width: 250px;
-    list-style-type: circle;
     margin: 0px;
+}
+
+.container1 li {
+    font-size: 16px;
+    padding: 8px;
+    margin: 8px;
+    background-color: rgb(221, 241, 188);
+    border-radius: 10px;
+}
+
+.container1 p {
+    font-size: 24px;
+    padding: 8px;
+    margin: 8px;
+    background-color: rgb(221, 241, 188);
+    border-radius: 10px;
+}
+
+.container1 p img {
+    max-height: 24px;
+    max-width: 24px;
+    margin-right: 8px;
+}
+
+.container1 p:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .container2 {
@@ -41,7 +69,7 @@ body {
     max-width: 800px;
     min-height: 250px;
     max-height: 350px;
-    background-color: rgb(233, 214, 162);
+    background-color: rgb(167, 144, 82);
     margin: var(--margin);
     padding: 0 16px 0 16px;
     position: relative;
@@ -49,9 +77,9 @@ body {
 
 .block h2 {
     font-size: 20px;
-    background-color: rgb(82, 43, 25);
+    background-color: var(--brown);
     padding: 16px;
-    color: rgb(199, 241, 150);
+    color: var(--green);
 }
 
 .block ul {
@@ -75,6 +103,14 @@ body {
     position: absolute;
     bottom: 2px;
     left: 2px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px var(--brown);
+    transition: box-shadow 0.3s;
+}
+
+.website-img:hover {
+    box-shadow: 8px 8px 16px var(--brown);
+    cursor: pointer;
 }
 
 .leaves {
