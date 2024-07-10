@@ -4,6 +4,7 @@
 
 :root {
     --margin: 16px;
+    --margin-left: 250px;
 }
 
 header {
@@ -18,17 +19,19 @@ body {
 }
 
 .container1 {
-    float: left;
     background-color: rgb(206, 228, 156);
-    margin: var(--margin);
     padding: 20px;
-    max-width: 300px;
-    min-height: 550px;
+    position: absolute;
+    top: 72px;
+    bottom: 0;
+    left: 0;
+    width: 250px;
     list-style-type: circle;
+    margin: 0px;
 }
 
 .container2 {
-
+    margin-left: var(--margin-left);
 }
 
 .block {
@@ -70,5 +73,9 @@ body {
 }
 
 .email-form {
+    margin-left: var(--margin-left);
+}
 
+footer {
+    margin-left: var(--margin-left);
 }
