@@ -43,8 +43,15 @@ body {
     max-height: 350px;
     background-color: rgb(233, 214, 162);
     margin: var(--margin);
-    padding: 16px;
+    padding: 0 16px 0 16px;
     position: relative;
+}
+
+.block h2 {
+    font-size: 20px;
+    background-color: rgb(82, 43, 25);
+    padding: 16px;
+    color: rgb(199, 241, 150);
 }
 
 .block ul {
@@ -58,24 +65,31 @@ body {
 
 .block li {
     padding: 8px 4px 8px 0;
+    font-size: 16px;
+    z-index: 2;
 }
 
-.block img {
-    max-width: 65%;
+.website-img {
+    max-width: 380px;
     margin: 10px;
     position: absolute;
     bottom: 2px;
     left: 2px;
 }
 
-.block h2 {
-    display: inline-block;
+.leaves {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 120px;
+    z-index: 0;
 }
 
 .email-form {
-    margin-left: var(--margin-left);
+    margin-left: 350px;
 }
 
 footer {
-    margin-left: var(--margin-left);
+    margin-left: 350px;
 }
