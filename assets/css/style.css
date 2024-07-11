@@ -19,14 +19,13 @@ header {
 }
 
 body {
-    background-color: rgb(83, 56, 23);
+    background-color: rgb(73, 50, 21);
     position: relative;
 }
 
 .container1 {
     background-color: var(--green);
     max-width: 250px;
-    min-height: 100%;
     float: left;
 }
 
@@ -46,6 +45,7 @@ body {
     background-color: rgb(221, 241, 188);
     border-radius: 10px;
     text-align: center;
+    color: var(--brown);
 }
 
 .container1 p {
@@ -54,6 +54,7 @@ body {
     margin: 8px;
     background-color: rgb(221, 241, 188);
     border-radius: 10px;
+    color: var(--brown);
 }
 
 .container1 p img {
@@ -122,7 +123,6 @@ body {
 .block li {
     padding: 8px 4px 8px 0;
     font-size: 16px;
-    z-index: 2;
 }
 
 .website-img {
@@ -171,7 +171,7 @@ body {
 
 footer {
     margin-left: 350px;
-    color: antiquewhite;
+    color: rgb(243, 227, 206);
 }
 
 @media screen and (max-width: 768px) {
