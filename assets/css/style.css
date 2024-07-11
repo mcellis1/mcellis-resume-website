@@ -313,7 +313,7 @@ footer {
     .website-img {
         max-width: 250px;
         margin: 4px;
-        position: none;
+        position: center;
         display: block;
         border-radius: 10px;
         box-shadow: 4px 4px 8px var(--brown);
