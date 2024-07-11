@@ -14,15 +14,15 @@ To view the deployed webpage, visit the url on github pages: https://mcellis1.gi
 
 To use the deployed website, navigate to the desired section you want to view using the nav bar in the top right.
 
-![image of a nav bar with the words About, Websites, Contact, and Newsletter](assets/images/nav-bar)
+![image of a nav bar with the words About, Websites, Contact, and Newsletter](https://github.com/mcellis1/mcellis-resume-website/blob/main/assets/images/nav-bar.png)
 
 You can click on the image of the website to visit the url for that website built by the developer.
 
-![image of a website screenshot](assets/images/website-click)
+![image of a website screenshot](https://github.com/mcellis1/mcellis-resume-website/blob/main/assets/images/website-click.png)
 
 You can click on your preferred method of social media on the left-hand column to contact the developer.
 
-![image of various social media links Email, Slack, Discord, and LinkedIn](assets/images/contact-links)
+![image of various social media links Email, Slack, Discord, and LinkedIn](https://github.com/mcellis1/mcellis-resume-website/blob/main/assets/images/contact-links.png)
 
 ## License
 
