@@ -291,6 +291,7 @@ footer {
     
     .block {
         max-width: 300px;
+        min-width: 10px;
     }
     
     #container1 {
@@ -306,8 +307,9 @@ footer {
 
     #bigger-block {
         max-width: 300px;
-        min-height: 250px;
-        max-height: 350px;
+        min-height: 10px;
+        max-height: 300px;
+        min-width: 10px;
         padding: 0 8px 0 8px;
     }
     
@@ -330,7 +332,7 @@ footer {
     }
     
     #bigger-website {
-        max-width: 380px;
+        max-width: 300px;
         margin: 10px;
         position: absolute;
         bottom: 2px;
