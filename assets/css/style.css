@@ -168,22 +168,24 @@ body {
     color: var(--brown);
 }
 
-#container1 p {
+#container1 a {
     font-size: 24px;
     padding: 8px;
     margin: 8px;
     background-color: var(--lightgreen);
     border-radius: 10px;
     color: var(--brown);
+    text-decoration: none;
+    display: block;
 }
 
-#container1 p img {
+#container1 a img {
     max-height: 24px;
     max-width: 24px;
     margin-right: 8px;
 }
 
-#container1 p:hover {
+#container1 a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
