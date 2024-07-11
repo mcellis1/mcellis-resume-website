@@ -293,6 +293,11 @@ footer {
         max-width: 300px;
         min-width: 10px;
     }
+
+    .leaves {
+        width: 80px;
+        height: 40px;
+    }
     
     #container1 {
         float: none;
@@ -306,10 +311,10 @@ footer {
     }
 
     #bigger-block {
-        max-width: 300px;
+        max-width: 350px;
         min-height: 10px;
         max-height: 300px;
-        min-width: 10px;
+        min-width: 350px;
         padding: 0 8px 0 8px;
     }
     
@@ -332,7 +337,7 @@ footer {
     }
     
     #bigger-website {
-        max-width: 300px;
+        max-width: 200px;
         margin: 10px;
         position: absolute;
         bottom: 2px;
