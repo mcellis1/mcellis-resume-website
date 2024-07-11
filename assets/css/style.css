@@ -291,12 +291,23 @@ footer {
     
     .block {
         max-width: 300px;
-        min-width: 10px;
+        min-width: 300px;
     }
 
     .leaves {
-        width: 80px;
-        height: 40px;
+        width: 100px;
+        height: 60px;
+    }
+
+    .website-img {
+        max-width: 200px;
+        margin: 4px;
+        position: absolute;
+        bottom: 2px;
+        left: 2px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px var(--brown);
+        transition: box-shadow 0.3s;
     }
     
     #container1 {
@@ -312,9 +323,9 @@ footer {
 
     #bigger-block {
         max-width: 350px;
-        min-height: 10px;
-        max-height: 300px;
         min-width: 350px;
+        min-height: 250px;
+        max-height: 300px;
         padding: 0 8px 0 8px;
     }
     
@@ -338,12 +349,12 @@ footer {
     
     #bigger-website {
         max-width: 200px;
-        margin: 10px;
+        margin: 4px;
         position: absolute;
         bottom: 2px;
         left: 2px;
         border-radius: 10px;
-        box-shadow: 4px 4px 8px;
+        box-shadow: 4px 4px 8px var(--brown);
         transition: box-shadow 0.3s;
     }
     
