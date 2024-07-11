@@ -25,12 +25,9 @@ body {
 
 .container1 {
     background-color: var(--green);
-    position: absolute;
-    top: 72px;
-    bottom: 0;
-    left: 0;
-    width: 250px;
-    margin: 0px;
+    max-width: 250px;
+    min-height: 100%;
+    float: left;
 }
 
 .container1 h2 {
@@ -71,22 +68,30 @@ body {
 }
 
 .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin-left: var(--margin-left);
 }
 
-.container2 p {
+.paragraph {
+    flex: wrap;
     font-size: 22px;
     text-align: left;
     margin: 16px;
     padding: 16px;
-    max-width: 1250px;
+    max-width: 1200px;
     background-color: var(--yellow);
     border-radius: 10px;
     line-height: 28px;
 }
 
+.paragraph li {
+    list-style: circle;
+    margin-left: 35px;
+}
+
 .block {
-    display: inline-flex;
     flex: wrap;
     min-width: 600px;
     max-width: 800px;
@@ -159,7 +164,25 @@ body {
     z-index: -1;
 }
 
+#birds {
+    max-width: 100%;
+    display: block;
+}
+
 footer {
     margin-left: 350px;
     color: antiquewhite;
+}
+
+@media screen and (max-width: 768px) {
+    .container1 {
+        float: none;
+        max-width: 100%;
+        padding-bottom: 8px;
+    }
+
+    .container2 {
+        margin-left: 0%;
+        justify-content: space-around;
+    }
 }
