@@ -290,21 +290,31 @@ footer {
     }
     
     .block {
-        max-width: 300px;
-        min-width: 300px;
+        max-width: 350px;
+        min-width: 350px;
+    }
+
+    .block ul {
+        position: none;
+        display: block;
+    }
+
+    .block li {
+        font-size: 12;
+        position: none;
+        display: inline;
     }
 
     .leaves {
-        width: 100px;
-        height: 60px;
+        width: 80px;
+        height: 50px;
     }
 
     .website-img {
-        max-width: 200px;
+        max-width: 250px;
         margin: 4px;
-        position: absolute;
-        bottom: 2px;
-        left: 2px;
+        position: none;
+        display: block;
         border-radius: 10px;
         box-shadow: 4px 4px 8px var(--brown);
         transition: box-shadow 0.3s;
@@ -335,7 +345,8 @@ footer {
     }
     
     #bigger-block ul {
-        position: absolute;
+        position: none;
+        display: block;
         right: 0px;
         bottom: 8px;
         max-width: 160px;
@@ -345,14 +356,15 @@ footer {
     #bigger-block li {
         padding: 8px 4px 8px 0;
         font-size: 16px;
+        position: none;
+        display: inline;
     }
     
     #bigger-website {
         max-width: 200px;
         margin: 4px;
-        position: absolute;
-        bottom: 2px;
-        left: 2px;
+        position: none;
+        display: block;
         border-radius: 10px;
         box-shadow: 4px 4px 8px var(--brown);
         transition: box-shadow 0.3s;
@@ -366,8 +378,8 @@ footer {
         position: absolute;
         top: 0;
         right: 0;
-        width: 200px;
-        height: 120px;
+        width: 80px;
+        height: 50px;
         z-index: 0;
     }   
     
