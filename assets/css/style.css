@@ -3,7 +3,8 @@
     --margin-left: 250px;
     --green: rgb(130, 167, 63);
     --brown: rgb(29, 13, 6);
-    --yellow: rgb(204, 201, 24)
+    --yellow: rgb(204, 201, 24);
+    --offwhite: rgb(243, 227, 206);
 }
 
 * {
@@ -11,68 +12,27 @@
 }
 
 header {
-    text-align: center;
     font-size: 40px;
     background-color: var(--yellow);
     padding: 16px;
     color: var(--brown);
 }
 
+header h1 {
+    text-align: center;
+}
+
+header ul {
+    text-align: right;
+}
+
+header li {
+    display: inline;
+}
+
 body {
     background-color: rgb(73, 50, 21);
     position: relative;
-}
-
-.container1 {
-    background-color: var(--green);
-    max-width: 250px;
-    float: left;
-}
-
-.container1 h2 {
-    margin: 12px 0 12px 0;
-    color: var(--green);
-    text-align: center;
-    font-size: 28px;
-    padding: 12px;
-    background-color: var(--brown);
-}
-
-.container1 li {
-    font-size: 16px;
-    padding: 8px;
-    margin: 8px;
-    background-color: rgb(221, 241, 188);
-    border-radius: 10px;
-    text-align: center;
-    color: var(--brown);
-}
-
-.container1 p {
-    font-size: 24px;
-    padding: 8px;
-    margin: 8px;
-    background-color: rgb(221, 241, 188);
-    border-radius: 10px;
-    color: var(--brown);
-}
-
-.container1 p img {
-    max-height: 24px;
-    max-width: 24px;
-    margin-right: 8px;
-}
-
-.container1 p:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.container2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: var(--margin-left);
 }
 
 .paragraph {
@@ -87,9 +47,15 @@ body {
     line-height: 28px;
 }
 
+.paragraph h2 {
+    font-size: 28px;
+    padding: 5px 0 25px 0;
+}
+
 .paragraph li {
     list-style: circle;
     margin-left: 35px;
+    padding: 4px;
 }
 
 .block {
@@ -150,9 +116,114 @@ body {
     z-index: 0;
 }
 
-.email-form {
-    margin-left: 350px;
-    color: antiquewhite;
+#container1 {
+    background-color: var(--green);
+    max-width: 250px;
+    float: left;
+}
+
+#container1 h2 {
+    margin: 12px 0 12px 0;
+    color: var(--green);
+    text-align: center;
+    font-size: 28px;
+    padding: 12px;
+    background-color: var(--brown);
+}
+
+#container1 li {
+    font-size: 16px;
+    padding: 8px;
+    margin: 8px;
+    background-color: rgb(221, 241, 188);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--brown);
+}
+
+#container1 p {
+    font-size: 24px;
+    padding: 8px;
+    margin: 8px;
+    background-color: rgb(221, 241, 188);
+    border-radius: 10px;
+    color: var(--brown);
+}
+
+#container1 p img {
+    max-height: 24px;
+    max-width: 24px;
+    margin-right: 8px;
+}
+
+#container1 p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: var(--margin-left);
+}
+
+#bigger-block {
+    flex: wrap;
+    min-width: 1232px;
+    max-width: 1600px;
+    min-height: 500px;
+    max-height: 700px;
+    background-color: rgb(167, 144, 82);
+    margin: var(--margin);
+    padding: 0 16px 0 16px;
+    position: relative;
+}
+
+#bigger-block h2 {
+    font-size: 40px;
+    background-color: var(--brown);
+    padding: 32px;
+    color: var(--green);
+}
+
+#bigger-block ul {
+    position: absolute;
+    right: 0px;
+    bottom: 16px;
+    max-width: 320px;
+    list-style: circle;
+    margin: 20px;
+}
+
+#bigger-block li {
+    padding: 16px 8px 16px 0;
+    font-size: 32px;
+}
+
+#bigger-website {
+    max-width: 760px;
+    margin: 20px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px var(--brown);
+    transition: box-shadow 0.3s;
+}
+
+#bigger-website:hover {
+    box-shadow: 16px 16px 32px var(--brown);
+    cursor: pointer;
+}
+
+#big-leaves {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 240px;
+    z-index: 0;
 }
 
 #tree {
@@ -169,20 +240,84 @@ body {
     display: block;
 }
 
+#email-form {
+    margin: 20px 41% 25px 41%;
+    color: var(--offwhite);
+    line-height: 28px;
+    font-size: 16px;
+}
+
 footer {
-    margin-left: 350px;
-    color: rgb(243, 227, 206);
+    text-align: center;
+    color: var(--offwhite);
+    background-color: var(--brown);
+    padding: 16px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {
-    .container1 {
+    #container1 {
         float: none;
         max-width: 100%;
         padding-bottom: 8px;
     }
-
-    .container2 {
+    
+    #container2 {
         margin-left: 0%;
         justify-content: space-around;
     }
+
+    #bigger-block {
+        min-width: 600px;
+        max-width: 800px;
+        min-height: 250px;
+        max-height: 350px;
+        padding: 0 8px 0 8px;
+    }
+    
+    #bigger-block h2 {
+        font-size: 20px;
+        padding: 16px;
+    }
+    
+    #bigger-block ul {
+        position: absolute;
+        right: 0px;
+        bottom: 8px;
+        max-width: 160px;
+        margin: 10px;
+    }
+    
+    #bigger-block li {
+        padding: 8px 4px 8px 0;
+        font-size: 16px;
+    }
+    
+    #bigger-website {
+        max-width: 380px;
+        margin: 10px;
+        position: absolute;
+        bottom: 2px;
+        left: 2px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px;
+        transition: box-shadow 0.3s;
+    }
+    
+    #bigger-website:hover {
+        box-shadow: 8px 8px 16px;
+    }
+    
+    #big-leaves {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 120px;
+        z-index: 0;
+    }   
+    
+    #email-form {
+        margin: 20px 29% 25px 29%;
+    }    
 }
