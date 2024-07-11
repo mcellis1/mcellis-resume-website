@@ -300,6 +300,7 @@ footer {
     .block h2 {
         flex: wrap;
         max-height: 56px;
+        padding: 12px;
     }
 
     .block ul {
