@@ -290,7 +290,7 @@ footer {
     }
     
     .block {
-        max-width: 750px;
+        max-width: 92%;
     }
     
     #container1 {
@@ -305,8 +305,7 @@ footer {
     }
 
     #bigger-block {
-        min-width: 600px;
-        max-width: 800px;
+        max-width: 92%;
         min-height: 250px;
         max-height: 350px;
         padding: 0 8px 0 8px;
