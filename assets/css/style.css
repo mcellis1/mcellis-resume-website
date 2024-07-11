@@ -2,9 +2,12 @@
     --margin: 16px;
     --margin-left: 250px;
     --green: rgb(130, 167, 63);
+    --lightgreen: rgb(221, 241, 188);
     --brown: rgb(29, 13, 6);
+    --lightbrown: rgb(73, 50, 21);
     --yellow: rgb(204, 201, 24);
     --offwhite: rgb(243, 227, 206);
+    --tan: rgb(167, 144, 82);
 }
 
 * {
@@ -16,6 +19,15 @@ header {
     background-color: var(--yellow);
     padding: 16px;
     color: var(--brown);
+    position: relative;
+}
+
+header img {
+    max-height: 100px;
+    position: absolute;
+    border-radius: 50px;
+    top: 10%;
+    left: 1%;
 }
 
 header h1 {
@@ -24,14 +36,29 @@ header h1 {
 
 header ul {
     text-align: right;
+    margin: 8px;
 }
 
 header li {
     display: inline;
 }
 
+header li a {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0 10px 0 10px;
+    color: var(--lightbrown);
+    background-color: var(--tan);
+    border-radius: 18px;
+}
+
+header li a:hover {
+    text-decoration: underline;
+    color: var(--brown);
+}
+
 body {
-    background-color: rgb(73, 50, 21);
+    background-color: var(--lightbrown);
     position: relative;
 }
 
@@ -64,7 +91,7 @@ body {
     max-width: 800px;
     min-height: 250px;
     max-height: 350px;
-    background-color: rgb(167, 144, 82);
+    background-color: var(--tan);
     margin: var(--margin);
     padding: 0 16px 0 16px;
     position: relative;
@@ -135,7 +162,7 @@ body {
     font-size: 16px;
     padding: 8px;
     margin: 8px;
-    background-color: rgb(221, 241, 188);
+    background-color: var(--lightgreen);
     border-radius: 10px;
     text-align: center;
     color: var(--brown);
@@ -145,7 +172,7 @@ body {
     font-size: 24px;
     padding: 8px;
     margin: 8px;
-    background-color: rgb(221, 241, 188);
+    background-color: var(--lightgreen);
     border-radius: 10px;
     color: var(--brown);
 }
@@ -174,7 +201,7 @@ body {
     max-width: 1600px;
     min-height: 500px;
     max-height: 700px;
-    background-color: rgb(167, 144, 82);
+    background-color: var(--tan);
     margin: var(--margin);
     padding: 0 16px 0 16px;
     position: relative;
@@ -256,6 +283,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    header h1 {
+        text-align: right;
+    }
+    
     #container1 {
         float: none;
         max-width: 100%;
